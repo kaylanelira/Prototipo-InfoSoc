@@ -1,78 +1,20 @@
 {
-	"name": "MainCode",
+	"name": "Folha de eventos 1",
 	"events": [
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Controls",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "If the left is being held, move the player left (also works with a gamepad)."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 573989780196578,
-							"parameters": {
-								"key": 37
-							}
-						},
-						{
-							"id": "is-button-down",
-							"objectClass": "Gamepad",
-							"sid": 237692792460100,
-							"parameters": {
-								"gamepad": "0",
-								"button": "d-pad-left"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 861091851412908,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "comment",
-					"text": "If the right is being held, move the player right (also works with a gamepad)."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 843645347083664,
-							"parameters": {
-								"key": 39
-							}
-						},
-						{
-							"id": "is-button-down",
-							"objectClass": "Gamepad",
-							"sid": 810778924894699,
-							"parameters": {
-								"gamepad": "0",
-								"button": "d-pad-right"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 737937181937435,
-					"isOrBlock": true
-				}
-			],
-			"sid": 968557592602100
+			"eventType": "variable",
+			"name": "tempoDescida",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 221093790473126
 		},
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Environment",
+			"title": "Environment2",
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
@@ -86,14 +28,14 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 606814418471582,
+							"sid": 886367836274198,
 							"parameters": {
 								"interval-seconds": "1"
 							}
 						}
 					],
 					"actions": [],
-					"sid": 964265836634834,
+					"sid": 442119412006903,
 					"children": [
 						{
 							"eventType": "block",
@@ -101,7 +43,7 @@
 								{
 									"id": "repeat",
 									"objectClass": "System",
-									"sid": 303950564149610,
+									"sid": 966000512702180,
 									"parameters": {
 										"count": "2"
 									}
@@ -111,7 +53,7 @@
 								{
 									"id": "create-object",
 									"objectClass": "System",
-									"sid": 328648947886837,
+									"sid": 313894968627751,
 									"parameters": {
 										"object-to-create": "Bubble",
 										"layer": "\"Foreground\"",
@@ -124,7 +66,7 @@
 								{
 									"id": "tween-one-property",
 									"objectClass": "Bubble",
-									"sid": 745124474988567,
+									"sid": 968529379805053,
 									"behaviorType": "Tween",
 									"parameters": {
 										"tags": "\"Float\"",
@@ -140,7 +82,7 @@
 								{
 									"id": "move-to-object",
 									"objectClass": "Bubble",
-									"sid": 844951905222044,
+									"sid": 676450872602424,
 									"parameters": {
 										"where": "in-front",
 										"object": "River"
@@ -149,13 +91,13 @@
 								{
 									"id": "set-opacity",
 									"objectClass": "Bubble",
-									"sid": 307845833734797,
+									"sid": 184797804461746,
 									"parameters": {
 										"opacity": "random(25, 50)"
 									}
 								}
 							],
-							"sid": 852284141287305
+							"sid": 503565423757866
 						}
 					]
 				},
@@ -169,7 +111,7 @@
 						{
 							"id": "on-tweens-finished",
 							"objectClass": "Bubble",
-							"sid": 948730337020282,
+							"sid": 229448417212485,
 							"behaviorType": "Tween",
 							"parameters": {
 								"tags": "\"Float\""
@@ -180,14 +122,14 @@
 						{
 							"id": "set-animation",
 							"objectClass": "Bubble",
-							"sid": 844191926677021,
+							"sid": 997862027416201,
 							"parameters": {
 								"animation": "\"Burst\"",
 								"from": "beginning"
 							}
 						}
 					],
-					"sid": 574807667198300
+					"sid": 541593913052583
 				},
 				{
 					"eventType": "comment",
@@ -199,7 +141,7 @@
 						{
 							"id": "on-animation-finished",
 							"objectClass": "Bubble",
-							"sid": 406205593850925,
+							"sid": 898987415725760,
 							"parameters": {
 								"animation": "\"Burst\""
 							}
@@ -209,10 +151,10 @@
 						{
 							"id": "destroy",
 							"objectClass": "Bubble",
-							"sid": 633652446296993
+							"sid": 146771311267817
 						}
 					],
-					"sid": 866759827212739
+					"sid": 533235644658737
 				},
 				{
 					"eventType": "block",
@@ -220,15 +162,15 @@
 						{
 							"id": "every-tick",
 							"objectClass": "System",
-							"sid": 649602904808379
+							"sid": 198383218939400
 						},
 						{
 							"id": "compare-y",
 							"objectClass": "River",
-							"sid": 440452349113803,
+							"sid": 644014591219724,
 							"parameters": {
-								"comparison": 4,
-								"y-co-ordinate": "800"
+								"comparison": 5,
+								"y-co-ordinate": "872"
 							}
 						}
 					],
@@ -236,51 +178,35 @@
 						{
 							"id": "set-height",
 							"objectClass": "River",
-							"sid": 225437940122287,
+							"sid": 603806201663698,
+							"disabled": true,
 							"parameters": {
-								"height": "(wallclocktime*(80))"
+								"height": "(wallclocktime/(20))"
 							}
 						},
 						{
 							"id": "set-y",
 							"objectClass": "River",
-							"sid": 138738975231433,
+							"sid": 271855870555227,
 							"parameters": {
-								"y": "1080-(wallclocktime*40)"
+								"y": "872+(tempoDescida*10)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 622857549184945,
+							"parameters": {
+								"variable": "tempoDescida",
+								"value": "0.2"
 							}
 						}
 					],
-					"sid": 560468398605130
+					"sid": 820928169038328
 				}
 			],
-			"sid": 657378444862248
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-object-clicked",
-					"objectClass": "Mouse",
-					"sid": 818473973430587,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked",
-						"object-clicked": "bueiro"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 969116452850680,
-					"parameters": {
-						"layout": "SecondLevel"
-					}
-				}
-			],
-			"sid": 379445421089175
+			"sid": 560065623954449
 		}
 	],
-	"sid": 800345309938463
+	"sid": 799915906024095
 }

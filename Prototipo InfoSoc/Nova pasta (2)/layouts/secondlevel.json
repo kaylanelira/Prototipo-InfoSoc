@@ -1,8 +1,8 @@
 {
-	"name": "MainLevel",
+	"name": "SecondLevel",
 	"layers": [
 		{
-			"name": "Background",
+			"name": "Camada 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -15,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 22,
+					"uid": 4,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
@@ -34,41 +34,7 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				}
-			],
-			"sid": 715954797401064,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 0.25,
-			"parallaxY": 0.25,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Foreground",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
+				},
 				{
 					"type": "River",
 					"properties": {
@@ -78,7 +44,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 20,
+					"uid": 18,
 					"instanceVariables": {},
 					"behaviors": {
 						"Sólido": {
@@ -89,10 +55,10 @@
 						}
 					},
 					"world": {
-						"x": 960.0000000000001,
-						"y": 857,
+						"x": 961,
+						"y": 872,
 						"width": 1916,
-						"height": 436,
+						"height": 700,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -130,12 +96,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 2
 					},
-					"uid": 30,
+					"uid": 19,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 30,
+						"uid": 19,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -159,8 +125,8 @@
 						}
 					},
 					"world": {
-						"x": 1038,
-						"y": 670,
+						"x": 1035,
+						"y": 673,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -201,12 +167,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 2,
+					"uid": 21,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 2,
+						"uid": 21,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -230,8 +196,8 @@
 						}
 					},
 					"world": {
-						"x": 1077.9857659766844,
-						"y": -159.66285080586755,
+						"x": 1075,
+						"y": -157,
 						"width": -10,
 						"height": -8,
 						"originX": 0,
@@ -272,12 +238,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 3,
+					"uid": 23,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 3,
+						"uid": 23,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -301,8 +267,8 @@
 						}
 					},
 					"world": {
-						"x": 1181.993837051164,
-						"y": -235.7780414256014,
+						"x": 1179,
+						"y": -233,
 						"width": -10,
 						"height": -8,
 						"originX": 0,
@@ -343,12 +309,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 6,
+					"uid": 24,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 6,
+						"uid": 24,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -372,8 +338,8 @@
 						}
 					},
 					"world": {
-						"x": 789.8918005973344,
-						"y": -161.0759393360889,
+						"x": 787,
+						"y": -158,
 						"width": -10,
 						"height": -8,
 						"originX": 0,
@@ -414,12 +380,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 7,
+					"uid": 25,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 7,
+						"uid": 25,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -443,8 +409,8 @@
 						}
 					},
 					"world": {
-						"x": 891.9827480564478,
-						"y": -239.62889635024527,
+						"x": 889,
+						"y": -237,
 						"width": -10,
 						"height": -8,
 						"originX": 0,
@@ -485,12 +451,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 8,
+					"uid": 26,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 8,
+						"uid": 26,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -514,8 +480,8 @@
 						}
 					},
 					"world": {
-						"x": 1422,
-						"y": -218,
+						"x": 1419,
+						"y": -215,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -556,12 +522,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 9,
+					"uid": 27,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 9,
+						"uid": 27,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -585,8 +551,8 @@
 						}
 					},
 					"world": {
-						"x": 1582,
-						"y": -70,
+						"x": 1579,
+						"y": -67,
 						"width": -10,
 						"height": -16,
 						"originX": 0,
@@ -627,12 +593,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 10,
+					"uid": 28,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 10,
+						"uid": 28,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -656,8 +622,8 @@
 						}
 					},
 					"world": {
-						"x": 1684,
-						"y": -146,
+						"x": 1681,
+						"y": -143,
 						"width": -10,
 						"height": -16,
 						"originX": 0,
@@ -698,12 +664,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 15,
+					"uid": 29,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 15,
+						"uid": 29,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -727,8 +693,8 @@
 						}
 					},
 					"world": {
-						"x": 178,
-						"y": -248,
+						"x": 175,
+						"y": -245,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -769,12 +735,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 16,
+					"uid": 31,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 16,
+						"uid": 31,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -798,8 +764,8 @@
 						}
 					},
 					"world": {
-						"x": 338,
-						"y": -100,
+						"x": 335,
+						"y": -97,
 						"width": -10,
 						"height": -16,
 						"originX": 0,
@@ -840,12 +806,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 17,
+					"uid": 32,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 17,
+						"uid": 32,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -869,8 +835,8 @@
 						}
 					},
 					"world": {
-						"x": 440,
-						"y": -176,
+						"x": 437,
+						"y": -173,
 						"width": -10,
 						"height": -16,
 						"originX": 0,
@@ -911,12 +877,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 11,
+					"uid": 33,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 11,
+						"uid": 33,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -940,8 +906,8 @@
 						}
 					},
 					"world": {
-						"x": 1740,
-						"y": -64,
+						"x": 1737,
+						"y": -61,
 						"width": -10,
 						"height": -16,
 						"originX": 0,
@@ -982,12 +948,12 @@
 						"destroy-mode": "fade-to-invisible",
 						"timeout": 1.7
 					},
-					"uid": 13,
+					"uid": 34,
 					"instanceVariables": {},
 					"behaviors": {},
 					"sceneGraphData": {
 						"parent-uid": null,
-						"uid": 13,
+						"uid": 34,
 						"flags": {
 							"x": true,
 							"y": true,
@@ -1011,8 +977,8 @@
 						}
 					},
 					"world": {
-						"x": 1842,
-						"y": -140,
+						"x": 1839,
+						"y": -137,
 						"width": -10,
 						"height": -16,
 						"originX": 0,
@@ -1037,7 +1003,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 14,
+					"uid": 35,
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -1054,8 +1020,8 @@
 						}
 					},
 					"world": {
-						"x": 284,
-						"y": 918,
+						"x": 281,
+						"y": 921,
 						"width": 144,
 						"height": 148,
 						"originX": 0.505,
@@ -1071,7 +1037,7 @@
 					}
 				}
 			],
-			"sid": 393378032589050,
+			"sid": 481403054393258,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -1087,7 +1053,7 @@
 				0.3686274509803922,
 				1
 			],
-			"isTransparent": true,
+			"isTransparent": false,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -1100,26 +1066,14 @@
 			"global": false
 		}
 	],
-	"sid": 172795104142367,
+	"sid": 371894369158244,
 	"nonworld-instances": [],
-	"effectTypes": [
-		{
-			"effectId": "noise",
-			"name": "Noise",
-			"instance": {
-				"isEnabled": true,
-				"parameters": {
-					"intensity": 0.1,
-					"color": 0
-				}
-			}
-		}
-	],
+	"effectTypes": [],
 	"width": 1920,
 	"height": 1080,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "MainCode"
+	"eventSheet": "Folha de eventos 1"
 }
