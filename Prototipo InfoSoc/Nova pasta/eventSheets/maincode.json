@@ -1,0 +1,260 @@
+{
+	"name": "MainCode",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Controls",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "If the left is being held, move the player left (also works with a gamepad)."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 573989780196578,
+							"parameters": {
+								"key": 37
+							}
+						},
+						{
+							"id": "is-button-down",
+							"objectClass": "Gamepad",
+							"sid": 237692792460100,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-left"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 861091851412908,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "comment",
+					"text": "If the right is being held, move the player right (also works with a gamepad)."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 843645347083664,
+							"parameters": {
+								"key": 39
+							}
+						},
+						{
+							"id": "is-button-down",
+							"objectClass": "Gamepad",
+							"sid": 810778924894699,
+							"parameters": {
+								"gamepad": "0",
+								"button": "d-pad-right"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 737937181937435,
+					"isOrBlock": true
+				}
+			],
+			"sid": 968557592602100
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Environment",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Every 0.1 seconds spawn 4 bubbles inside the river and make them float towards the surface, making the water look very hot."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 606814418471582,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 964265836634834,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "repeat",
+									"objectClass": "System",
+									"sid": 303950564149610,
+									"parameters": {
+										"count": "2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 328648947886837,
+									"parameters": {
+										"object-to-create": "Bubble",
+										"layer": "\"Foreground\"",
+										"x": "random(River.BBoxLeft, River.BBoxRight)",
+										"y": "River.BBoxBottom",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								},
+								{
+									"id": "tween-one-property",
+									"objectClass": "Bubble",
+									"sid": 745124474988567,
+									"behaviorType": "Tween",
+									"parameters": {
+										"tags": "\"Float\"",
+										"property": "offsetY",
+										"end-value": "River.BBoxTop + Self.Height / 2",
+										"time": "random(3, 2)",
+										"ease": "noease",
+										"destroy-on-complete": "no",
+										"loop": "no",
+										"ping-pong": "no"
+									}
+								},
+								{
+									"id": "move-to-object",
+									"objectClass": "Bubble",
+									"sid": 844951905222044,
+									"parameters": {
+										"where": "in-front",
+										"object": "River"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "Bubble",
+									"sid": 307845833734797,
+									"parameters": {
+										"opacity": "random(25, 50)"
+									}
+								}
+							],
+							"sid": 852284141287305
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "Once a bubble reaches the surface, display a \"Burst\" animation."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "Bubble",
+							"sid": 948730337020282,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"Float\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bubble",
+							"sid": 844191926677021,
+							"parameters": {
+								"animation": "\"Burst\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 574807667198300
+				},
+				{
+					"eventType": "comment",
+					"text": "Once the bubble has been popped, destroy it to prevent any sort of CPU or memory overload."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "Bubble",
+							"sid": 406205593850925,
+							"parameters": {
+								"animation": "\"Burst\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Bubble",
+							"sid": 633652446296993
+						}
+					],
+					"sid": 866759827212739
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 649602904808379
+						},
+						{
+							"id": "compare-y",
+							"objectClass": "River",
+							"sid": 277328283307214,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "800"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-height",
+							"objectClass": "River",
+							"sid": 365178020888080,
+							"parameters": {
+								"height": "(wallclocktime*(20))"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "River",
+							"sid": 439382324689590,
+							"parameters": {
+								"y": "1100-(wallclocktime*10)"
+							}
+						}
+					],
+					"sid": 560468398605130
+				}
+			],
+			"sid": 657378444862248
+		}
+	],
+	"sid": 800345309938463
+}
