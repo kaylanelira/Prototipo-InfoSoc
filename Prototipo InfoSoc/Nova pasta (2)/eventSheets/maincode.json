@@ -261,11 +261,11 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 818473973430587,
+					"sid": 963201061725875,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "bueiro"
+						"object-clicked": "Sprite5"
 					}
 				}
 			],
@@ -280,6 +280,32 @@
 				}
 			],
 			"sid": 379445421089175
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "River",
+					"sid": 988392078932078,
+					"parameters": {
+						"comparison": 2,
+						"y-co-ordinate": "1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite5",
+					"sid": 420360504406812,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"WarpLayout\""
+					}
+				}
+			],
+			"sid": 227915704618310
 		}
 	],
 	"sid": 800345309938463

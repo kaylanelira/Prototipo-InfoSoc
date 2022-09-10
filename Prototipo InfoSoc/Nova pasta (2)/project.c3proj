@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -17,7 +17,7 @@
 		{
 			"type": "plugin",
 			"id": "Timeline",
-			"name": "Controlador da timeline",
+			"name": "Timeline controller",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -25,7 +25,7 @@
 		{
 			"type": "plugin",
 			"id": "Particles",
-			"name": "Partículas",
+			"name": "Particles",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -57,7 +57,7 @@
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -65,7 +65,7 @@
 		{
 			"type": "behavior",
 			"id": "Tween",
-			"name": "Interpolação",
+			"name": "Tween",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -73,7 +73,7 @@
 		{
 			"type": "effect",
 			"id": "warplayout",
-			"name": "Deformar layout",
+			"name": "Warp layout",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -81,7 +81,7 @@
 		{
 			"type": "effect",
 			"id": "noise",
-			"name": "Ruído",
+			"name": "Noise",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -101,8 +101,14 @@
 			"PlayerAnimations",
 			"WaterSplash",
 			"Sprite2",
-			"bueiro",
-			"Mouse"
+			"Mouse",
+			"Sprite3",
+			"Sprite4",
+			"imageedit_6_",
+			"imageedit_6_2",
+			"Sprite5",
+			"Sprite",
+			"Sprite6"
 		],
 		"subfolders": []
 	},
