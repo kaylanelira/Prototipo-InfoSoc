@@ -98,7 +98,6 @@
 			"CaveHumidity",
 			"Bubble",
 			"Gamepad",
-			"PlayerAnimations",
 			"WaterSplash",
 			"Sprite2",
 			"Mouse",
@@ -108,7 +107,9 @@
 			"imageedit_6_2",
 			"Sprite5",
 			"Sprite",
-			"Sprite6"
+			"Sprite6",
+			"Sprite7",
+			"Sprite8"
 		],
 		"subfolders": []
 	},
