@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -17,7 +17,7 @@
 		{
 			"type": "plugin",
 			"id": "Timeline",
-			"name": "Timeline controller",
+			"name": "Controlador da timeline",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -25,7 +25,7 @@
 		{
 			"type": "plugin",
 			"id": "Particles",
-			"name": "Particles",
+			"name": "Partículas",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -57,7 +57,7 @@
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "Sólido",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -65,7 +65,7 @@
 		{
 			"type": "behavior",
 			"id": "Tween",
-			"name": "Tween",
+			"name": "Interpolação",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -73,7 +73,7 @@
 		{
 			"type": "effect",
 			"id": "warplayout",
-			"name": "Warp layout",
+			"name": "Deformar layout",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -81,7 +81,7 @@
 		{
 			"type": "effect",
 			"id": "noise",
-			"name": "Noise",
+			"name": "Ruído",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false

@@ -155,57 +155,63 @@
 						}
 					],
 					"sid": 533235644658737
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 198383218939400
-						},
-						{
-							"id": "compare-y",
-							"objectClass": "River",
-							"sid": 644014591219724,
-							"parameters": {
-								"comparison": 5,
-								"y-co-ordinate": "872"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-height",
-							"objectClass": "River",
-							"sid": 603806201663698,
-							"disabled": true,
-							"parameters": {
-								"height": "(wallclocktime/(20))"
-							}
-						},
-						{
-							"id": "set-y",
-							"objectClass": "River",
-							"sid": 271855870555227,
-							"parameters": {
-								"y": "872+(tempoDescida*10)"
-							}
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 622857549184945,
-							"parameters": {
-								"variable": "tempoDescida",
-								"value": "0.2"
-							}
-						}
-					],
-					"sid": 820928169038328
 				}
 			],
 			"sid": 560065623954449
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 143631816190485
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite7",
+					"sid": 160727874603998,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 408860237726746
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 683703661456086,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite7",
+					"sid": 459357696074060,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Sprite8",
+					"sid": 222390334720078,
+					"parameters": {
+						"distance": "511"
+					}
+				}
+			],
+			"sid": 214305691865474
 		}
 	],
 	"sid": 799915906024095
