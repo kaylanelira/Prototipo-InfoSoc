@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite2",
+					"type": "MainBackground",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -971,8 +971,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 212,
-						"y": 1005,
+						"x": 467,
+						"y": 913,
 						"width": 328.9859973650995,
 						"height": 164.47818400700965,
 						"originX": 0.5,
@@ -988,7 +988,7 @@
 					}
 				},
 				{
-					"type": "Sprite4",
+					"type": "iManhole1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1046,7 +1046,7 @@
 					}
 				},
 				{
-					"type": "Sprite6",
+					"type": "GarbageManhole",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1058,8 +1058,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 247,
-						"y": 957,
+						"x": 511,
+						"y": 873,
 						"width": 308,
 						"height": 298,
 						"originX": 0.5,
@@ -1075,7 +1075,7 @@
 					}
 				},
 				{
-					"type": "Sprite6",
+					"type": "GarbageManhole",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1104,7 +1104,7 @@
 					}
 				},
 				{
-					"type": "Sprite6",
+					"type": "GarbageManhole",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1133,36 +1133,7 @@
 					}
 				},
 				{
-					"type": "Sprite7",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 18,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1050,
-						"y": 527,
-						"width": 1154,
-						"height": 1018.9999999999999,
-						"originX": 0.538,
-						"originY": 0.498,
-						"color": [
-							1,
-							1,
-							1,
-							0
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Sprite8",
+					"type": "Persona",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1172,14 +1143,65 @@
 					},
 					"uid": 105,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Plataforma": {
+							"properties": {
+								"max-speed": 330,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": -452,
-						"y": 686,
+						"x": 151,
+						"y": 670,
 						"width": 286,
 						"height": 521,
 						"originX": 0.4828571428571429,
 						"originY": 0.46769662921348315,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Plataform",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 106,
+					"instanceVariables": {},
+					"behaviors": {
+						"Sólido": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 1082.5,
+						"y": 892,
+						"width": 2313,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1218,6 +1240,98 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Notif",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "NotifBackground",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 111,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 976.5,
+						"y": 549.5,
+						"width": 1981,
+						"height": 1115,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NotifPhone",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 18,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1011,
+						"y": 709,
+						"width": 1502,
+						"height": 1320,
+						"originX": 0.538,
+						"originY": 0.498,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 181193005290994,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"sid": 371894369158244,
@@ -1229,5 +1343,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Folha de eventos 1"
+	"eventSheet": "eSecondLevel"
 }

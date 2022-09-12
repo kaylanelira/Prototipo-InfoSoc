@@ -1,5 +1,5 @@
 {
-	"name": "Folha de eventos 1",
+	"name": "eSecondLevel",
 	"events": [
 		{
 			"eventType": "variable",
@@ -163,55 +163,89 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-click",
-					"objectClass": "Mouse",
-					"sid": 143631816190485
+					"id": "on-collision-with-another-object",
+					"objectClass": "Persona",
+					"sid": 243009488563406,
+					"parameters": {
+						"object": "GarbageManhole"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-opacity",
-					"objectClass": "Sprite7",
-					"sid": 160727874603998,
+					"id": "set-visible",
+					"objectClass": "GarbageManhole",
+					"sid": 676828672237793,
 					"parameters": {
-						"opacity": "100"
+						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 408860237726746
+			"sid": 362452813438369
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-click",
-					"objectClass": "Mouse",
-					"sid": 683703661456086,
-					"parameters": {
-						"mouse-button": "left",
-						"click-type": "clicked"
-					}
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 651021360051298
 				}
 			],
 			"actions": [
 				{
-					"id": "set-opacity",
-					"objectClass": "Sprite7",
-					"sid": 459357696074060,
+					"id": "set-visible",
+					"objectClass": "NotifPhone",
+					"sid": 963424642221845,
 					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "move-forward",
-					"objectClass": "Sprite8",
-					"sid": 222390334720078,
-					"parameters": {
-						"distance": "511"
+						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 214305691865474
+			"sid": 900408518123221
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-click",
+					"objectClass": "Mouse",
+					"sid": 878153764136131
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 419444364731270,
+					"parameters": {
+						"layer": "1",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 420894110925592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Persona",
+					"sid": 383656734589569
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 990252525401678,
+					"parameters": {
+						"layout": "Prototype"
+					}
+				}
+			],
+			"sid": 403673414455892
 		}
 	],
 	"sid": 799915906024095

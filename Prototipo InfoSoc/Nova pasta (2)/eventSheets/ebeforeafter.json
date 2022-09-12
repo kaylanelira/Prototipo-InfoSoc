@@ -1,0 +1,65 @@
+{
+	"name": "eBeforeAfter",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 300422174151951,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 421811968765657,
+					"parameters": {
+						"layout": "MainLevel"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 206474071674260,
+					"parameters": {
+						"layer": "1",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 462469471097307
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 521844687111185,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 656603718504958,
+					"parameters": {
+						"layout": "SecondLevel"
+					}
+				}
+			],
+			"sid": 686913495638369
+		}
+	],
+	"sid": 851782992436059
+}

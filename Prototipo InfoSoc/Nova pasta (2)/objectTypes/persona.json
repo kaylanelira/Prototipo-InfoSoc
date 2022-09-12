@@ -1,10 +1,16 @@
 {
-	"name": "Sprite8",
+	"name": "Persona",
 	"plugin-id": "Sprite",
 	"sid": 558181313485443,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Plataforma",
+			"sid": 829745871748946
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

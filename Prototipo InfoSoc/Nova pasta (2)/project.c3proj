@@ -8,6 +8,22 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Teclado",
 			"author": "Scirra",
@@ -32,22 +48,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
-			"author": "Scirra",
-			"version": "r308",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "gamepad",
-			"name": "Gamepad",
-			"author": "Scirra",
-			"version": "r308",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -58,6 +58,14 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Sólido",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -97,21 +105,43 @@
 			"Fireflies",
 			"CaveHumidity",
 			"Bubble",
-			"Gamepad",
 			"WaterSplash",
-			"Sprite2",
+			"MainBackground",
 			"Mouse",
-			"Sprite3",
-			"Sprite4",
-			"imageedit_6_",
-			"imageedit_6_2",
-			"Sprite5",
 			"Sprite",
-			"Sprite6",
-			"Sprite7",
-			"Sprite8"
+			"GarbageManhole",
+			"NotifPhone",
+			"NotifBackground"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"BackgroundText",
+					"BeforeTxt"
+				],
+				"subfolders": [],
+				"name": "BeforeAfter"
+			},
+			{
+				"items": [
+					"imageedit_6_2",
+					"imageedit_6_",
+					"iManhole1",
+					"iManhole2",
+					"Plataform",
+					"Persona"
+				],
+				"subfolders": [],
+				"name": "SecondLevel"
+			},
+			{
+				"items": [
+					"Manhole"
+				],
+				"subfolders": [],
+				"name": "MainLevel"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -122,14 +152,18 @@
 	"layouts": {
 		"items": [
 			"MainLevel",
-			"SecondLevel"
+			"SecondLevel",
+			"BeforeAfter",
+			"Prototype"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"MainCode",
-			"Folha de eventos 1"
+			"eMainLevel",
+			"eSecondLevel",
+			"eBeforeAfter",
+			"ePrototype"
 		],
 		"subfolders": []
 	},

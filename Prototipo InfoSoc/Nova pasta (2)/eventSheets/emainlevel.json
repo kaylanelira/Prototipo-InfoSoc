@@ -1,73 +1,15 @@
 {
-	"name": "MainCode",
+	"name": "eMainLevel",
 	"events": [
 		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Controls",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "comment",
-					"text": "If the left is being held, move the player left (also works with a gamepad)."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 573989780196578,
-							"parameters": {
-								"key": 37
-							}
-						},
-						{
-							"id": "is-button-down",
-							"objectClass": "Gamepad",
-							"sid": 237692792460100,
-							"parameters": {
-								"gamepad": "0",
-								"button": "d-pad-left"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 861091851412908,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "comment",
-					"text": "If the right is being held, move the player right (also works with a gamepad)."
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "key-is-down",
-							"objectClass": "Keyboard",
-							"sid": 843645347083664,
-							"parameters": {
-								"key": 39
-							}
-						},
-						{
-							"id": "is-button-down",
-							"objectClass": "Gamepad",
-							"sid": 810778924894699,
-							"parameters": {
-								"gamepad": "0",
-								"button": "d-pad-right"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 737937181937435,
-					"isOrBlock": true
-				}
-			],
-			"sid": 968557592602100
+			"eventType": "variable",
+			"name": "TempoSimulado",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Variável para indicar o tempo",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 218461638635822
 		},
 		{
 			"eventType": "group",
@@ -236,17 +178,26 @@
 						{
 							"id": "set-height",
 							"objectClass": "River",
-							"sid": 225437940122287,
+							"sid": 382242268003388,
 							"parameters": {
-								"height": "(wallclocktime*(80))"
+								"height": "(tempoDescida*(80))"
 							}
 						},
 						{
 							"id": "set-y",
 							"objectClass": "River",
-							"sid": 138738975231433,
+							"sid": 864878430187590,
 							"parameters": {
-								"y": "1080-(wallclocktime*40)"
+								"y": "1080-(tempoDescida*40)"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 457678907925908,
+							"parameters": {
+								"variable": "tempoDescida",
+								"value": "0.05"
 							}
 						}
 					],
@@ -265,7 +216,7 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "Sprite5"
+						"object-clicked": "Manhole"
 					}
 				}
 			],
@@ -273,9 +224,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 969116452850680,
+					"sid": 115081635446618,
 					"parameters": {
-						"layout": "SecondLevel"
+						"layout": "BeforeAfter"
 					}
 				}
 			],
@@ -297,7 +248,7 @@
 			"actions": [
 				{
 					"id": "set-effect-enabled",
-					"objectClass": "Sprite5",
+					"objectClass": "Manhole",
 					"sid": 420360504406812,
 					"parameters": {
 						"mode": "enable",
