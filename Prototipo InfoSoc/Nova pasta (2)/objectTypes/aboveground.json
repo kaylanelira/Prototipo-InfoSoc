@@ -1,7 +1,7 @@
 {
-	"name": "MainBackground",
+	"name": "AboveGround",
 	"plugin-id": "Sprite",
-	"sid": 839221624388040,
+	"sid": 713528299842519,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,39 +11,39 @@
 			{
 				"frames": [
 					{
-						"width": 700,
-						"height": 400,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 698,
+						"height": 140,
+						"originX": 0.498567335243553,
+						"originY": -0.42857142857142855,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6125244,
+						"imageSpriteId": 4351576,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								0.5,
+								0.498567335243553,
 								0,
-								0.9994791666666667,
+								0.998567335243553,
 								0,
-								0.9994791666666667,
-								0.5,
-								0.9994791666666667,
-								0.9990079365079365,
-								0.5,
-								0.9990079365079365,
+								0.998567335243553,
 								0,
-								0.9990079365079365,
+								0.998567335243553,
+								0.9928571428571429,
+								0.498567335243553,
+								0.9928571428571429,
 								0,
-								0.5
+								0.9928571428571429,
+								0,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 129257510962448,
+				"sid": 838468199312233,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

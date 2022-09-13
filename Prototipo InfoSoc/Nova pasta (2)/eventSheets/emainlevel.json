@@ -167,10 +167,10 @@
 						{
 							"id": "compare-y",
 							"objectClass": "River",
-							"sid": 440452349113803,
+							"sid": 993280281883627,
 							"parameters": {
 								"comparison": 4,
-								"y-co-ordinate": "800"
+								"y-co-ordinate": "850"
 							}
 						}
 					],
@@ -194,10 +194,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 457678907925908,
+							"sid": 692287865980200,
 							"parameters": {
 								"variable": "tempoDescida",
-								"value": "0.05"
+								"value": "0.03"
 							}
 						}
 					],

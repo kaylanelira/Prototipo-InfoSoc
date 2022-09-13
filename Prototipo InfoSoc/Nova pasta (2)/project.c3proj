@@ -72,6 +72,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direções",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Interpolação",
 			"author": "Scirra",
@@ -111,7 +119,15 @@
 			"Sprite",
 			"GarbageManhole",
 			"NotifPhone",
-			"NotifBackground"
+			"NotifBackground",
+			"AboveGround",
+			"BelowGround",
+			"raindrop",
+			"nanorrobos",
+			"end",
+			"Texto",
+			"Notification",
+			"NotifInstruction"
 		],
 		"subfolders": [
 			{
@@ -140,6 +156,11 @@
 				],
 				"subfolders": [],
 				"name": "MainLevel"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Prototype"
 			}
 		]
 	},

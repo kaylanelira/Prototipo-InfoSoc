@@ -1,7 +1,7 @@
 {
-	"name": "MainBackground",
+	"name": "BelowGround",
 	"plugin-id": "Sprite",
-	"sid": 839221624388040,
+	"sid": 991392334393429,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -18,23 +18,23 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6125244,
+						"imageSpriteId": 2607015,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
 								0.5,
 								0,
-								0.9994791666666667,
+								0.9985714285714286,
 								0,
-								0.9994791666666667,
+								0.9985714285714286,
 								0.5,
-								0.9994791666666667,
-								0.9990079365079365,
+								0.9985714285714286,
+								0.9975,
 								0.5,
-								0.9990079365079365,
+								0.9975,
 								0,
-								0.9990079365079365,
+								0.9975,
 								0,
 								0.5
 							]
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 129257510962448,
+				"sid": 388979914251632,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

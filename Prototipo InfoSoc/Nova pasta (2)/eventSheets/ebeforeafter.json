@@ -26,9 +26,9 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 206474071674260,
+					"sid": 919496806303596,
 					"parameters": {
-						"layer": "1",
+						"layer": "2",
 						"visibility": "invisible"
 					}
 				}
@@ -55,6 +55,15 @@
 					"sid": 656603718504958,
 					"parameters": {
 						"layout": "SecondLevel"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 283250401481162,
+					"parameters": {
+						"layer": "1",
+						"visibility": "invisible"
 					}
 				}
 			],

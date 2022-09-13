@@ -211,6 +211,22 @@
 					"id": "on-any-click",
 					"objectClass": "Mouse",
 					"sid": 878153764136131
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 753662174403170,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 457617675216621,
+					"parameters": {
+						"key": 37
+					}
 				}
 			],
 			"actions": [
@@ -224,7 +240,8 @@
 					}
 				}
 			],
-			"sid": 420894110925592
+			"sid": 420894110925592,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",

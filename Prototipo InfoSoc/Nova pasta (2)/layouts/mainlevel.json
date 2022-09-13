@@ -21,8 +21,8 @@
 					"world": {
 						"x": 960,
 						"y": 540,
-						"width": 1916,
-						"height": 1072,
+						"width": 1920,
+						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -96,7 +96,20 @@
 					},
 					"uid": 30,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"8Direções": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
 					"sceneGraphData": {
 						"parent-uid": null,
 						"uid": 30,
@@ -5278,8 +5291,8 @@
 						}
 					},
 					"world": {
-						"x": 346,
-						"y": 876,
+						"x": 328,
+						"y": 978,
 						"width": 238,
 						"height": 164,
 						"originX": 0.5,
@@ -5320,10 +5333,10 @@
 						}
 					},
 					"world": {
-						"x": 1708,
-						"y": 978,
-						"width": 198,
-						"height": 170,
+						"x": 1714,
+						"y": 988,
+						"width": 168,
+						"height": 148,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5349,8 +5362,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 378,
-						"y": 854,
+						"x": 362,
+						"y": 976,
 						"width": 308,
 						"height": 298,
 						"originX": 0.5,

@@ -21,8 +21,8 @@
 					"world": {
 						"x": 960,
 						"y": 540,
-						"width": 1916,
-						"height": 1072,
+						"width": 1920,
+						"height": 1080,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -62,7 +62,20 @@
 					},
 					"uid": 19,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"8Direções": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
 					"sceneGraphData": {
 						"parent-uid": null,
 						"uid": 19,
@@ -971,10 +984,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 467,
-						"y": 913,
-						"width": 328.9859973650995,
-						"height": 164.47818400700965,
+						"x": 392,
+						"y": 974,
+						"width": 238.41467210347588,
+						"height": 112.04885022950313,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1000,8 +1013,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1057,
-						"y": 827,
+						"x": 1072,
+						"y": 1009,
 						"width": 178,
 						"height": 79,
 						"originX": 0.5,
@@ -1029,8 +1042,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1753,
-						"y": 825,
+						"x": 1790,
+						"y": 959,
 						"width": 263.176879151795,
 						"height": 71.04285899560236,
 						"originX": 0.5,
@@ -1058,10 +1071,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 511,
-						"y": 873,
-						"width": 308,
-						"height": 298,
+						"x": 420,
+						"y": 943,
+						"width": 231.2210507720726,
+						"height": 219.4570629817337,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1087,8 +1100,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1757,
-						"y": 827,
+						"x": 1802,
+						"y": 942,
 						"width": 219.4477095055114,
 						"height": 228.11801485232624,
 						"originX": 0.5,
@@ -1116,8 +1129,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1072,
-						"y": 818,
+						"x": 1086,
+						"y": 990,
 						"width": 183.6732586728788,
 						"height": 205.09218875154204,
 						"originX": 0.5,
@@ -1160,8 +1173,8 @@
 						}
 					},
 					"world": {
-						"x": 151,
-						"y": 670,
+						"x": 146,
+						"y": 793,
 						"width": 286,
 						"height": 521,
 						"originX": 0.4828571428571429,
@@ -1196,8 +1209,8 @@
 						}
 					},
 					"world": {
-						"x": 1082.5,
-						"y": 892,
+						"x": 1098,
+						"y": 1014,
 						"width": 2313,
 						"height": 36,
 						"originX": 0.5,
@@ -1303,6 +1316,90 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Notification",
+					"properties": {
+						"text": "\nO bueiro está cheio!!!\n\nRetire o lixo o quanto antes.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 26,
+						"line-height": 0,
+						"bold": true,
+						"italic": true,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 127,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 799,
+						"y": 347,
+						"width": 287,
+						"height": 271,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NotifInstruction",
+					"properties": {
+						"text": "(Mover com setas para os lados)",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 19,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 128,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 809,
+						"y": 651,
+						"width": 207,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 181193005290994,
@@ -1328,7 +1425,7 @@
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
 			"drawOrder": "z-order",
-			"useRenderCells": false,
+			"useRenderCells": true,
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false

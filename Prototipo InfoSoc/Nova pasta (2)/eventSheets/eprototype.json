@@ -1,5 +1,169 @@
 {
 	"name": "ePrototype",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "colidiuNanorrobo",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Verifica com quantos nanorrobos a gota colidiu",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 647561315576387
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "raindrop",
+					"sid": 355793079404631,
+					"parameters": {
+						"object": "nanorrobos"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 267491028148453,
+					"parameters": {
+						"variable": "colidiuNanorrobo",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 483330351533238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 431606206244971,
+					"parameters": {
+						"variable": "colidiuNanorrobo",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "raindrop",
+					"sid": 870704415930331,
+					"parameters": {
+						"color": "rgbEx(60, 45, 8)"
+					}
+				}
+			],
+			"sid": 590199458192845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 158313658710907,
+					"parameters": {
+						"variable": "colidiuNanorrobo",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "raindrop",
+					"sid": 347186572995658,
+					"parameters": {
+						"color": "rgbEx(76, 57, 11)"
+					}
+				}
+			],
+			"sid": 436509694450152
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 626953558513481,
+					"parameters": {
+						"variable": "colidiuNanorrobo",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "raindrop",
+					"sid": 465987641519722,
+					"parameters": {
+						"color": "rgbEx(0, 200, 190)"
+					}
+				}
+			],
+			"sid": 241233397369172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 351099013229509,
+					"parameters": {
+						"variable": "colidiuNanorrobo",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "raindrop",
+					"sid": 392446958014461,
+					"parameters": {
+						"color": "rgbEx(79, 232, 255)"
+					}
+				}
+			],
+			"sid": 539919119510663
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "raindrop",
+					"sid": 601882586138631,
+					"parameters": {
+						"object": "end"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 191272373561188,
+					"parameters": {
+						"layout": "BeforeAfter"
+					}
+				}
+			],
+			"sid": 239808746047689
+		}
+	],
 	"sid": 783927738721200
 }
