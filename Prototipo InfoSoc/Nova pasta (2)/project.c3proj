@@ -17,7 +17,7 @@
 		{
 			"type": "plugin",
 			"id": "Text",
-			"name": "Texto",
+			"name": "Text",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -25,7 +25,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -33,7 +33,7 @@
 		{
 			"type": "plugin",
 			"id": "Timeline",
-			"name": "Controlador da timeline",
+			"name": "Timeline controller",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -41,7 +41,7 @@
 		{
 			"type": "plugin",
 			"id": "Particles",
-			"name": "Partículas",
+			"name": "Particles",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -57,7 +57,7 @@
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Sólido",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -65,7 +65,7 @@
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Plataforma",
+			"name": "Platform",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -73,7 +73,7 @@
 		{
 			"type": "behavior",
 			"id": "EightDir",
-			"name": "8 Direções",
+			"name": "8 Direction",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -81,7 +81,7 @@
 		{
 			"type": "behavior",
 			"id": "Tween",
-			"name": "Interpolação",
+			"name": "Tween",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -89,7 +89,7 @@
 		{
 			"type": "effect",
 			"id": "warplayout",
-			"name": "Deformar layout",
+			"name": "Warp layout",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -97,7 +97,7 @@
 		{
 			"type": "effect",
 			"id": "noise",
-			"name": "Ruído",
+			"name": "Noise",
 			"author": "Scirra",
 			"version": "r308",
 			"bundled": false
@@ -127,7 +127,8 @@
 			"end",
 			"Texto",
 			"Notification",
-			"NotifInstruction"
+			"NotifInstruction",
+			"Sprite2"
 		],
 		"subfolders": [
 			{

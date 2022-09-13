@@ -194,10 +194,10 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 692287865980200,
+							"sid": 207554349746327,
 							"parameters": {
 								"variable": "tempoDescida",
-								"value": "0.03"
+								"value": "0.015"
 							}
 						}
 					],
