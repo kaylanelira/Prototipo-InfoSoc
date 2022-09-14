@@ -4,7 +4,13 @@
 	"sid": 143337980424753,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Orbit",
+			"name": "Orbit",
+			"sid": 624876875627046
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

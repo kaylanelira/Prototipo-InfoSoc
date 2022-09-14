@@ -5389,14 +5389,7 @@
 					},
 					"uid": 20,
 					"instanceVariables": {},
-					"behaviors": {
-						"Sólido": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 960,
 						"y": 862,

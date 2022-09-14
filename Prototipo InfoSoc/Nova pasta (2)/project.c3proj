@@ -87,6 +87,14 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "warplayout",
 			"name": "Warp layout",
@@ -128,7 +136,13 @@
 			"Texto",
 			"Notification",
 			"NotifInstruction",
-			"Sprite2"
+			"Sprite2",
+			"Sprite3",
+			"Sprite4",
+			"Sprite5",
+			"Sprite6",
+			"Sprite8",
+			"Sprite7"
 		],
 		"subfolders": [
 			{
